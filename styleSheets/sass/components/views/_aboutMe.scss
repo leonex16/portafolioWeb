@@ -1,0 +1,145 @@
+.aboutMe__main-container {
+	@extend .main-container;
+}
+.aboutMe__header-container {
+	@extend .header-container;
+}
+.aboutMe__header-container__title {
+	@extend .header-container__title;
+}
+.aboutMe__body-container {
+	@extend .body-container;
+}
+.aboutMe__main {
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	background-color: $white;
+	backdrop-filter: blur(5px);
+
+	text-align: center;
+
+	padding: $padding;
+
+	overflow: auto;
+}
+.aboutMe__main__text {
+	color: $black;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	text-align: justify;
+
+	& strong {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+.aboutMe__main__img {
+	height: auto;
+	margin-top: $margin;
+	width: 200px;
+}
+.aboutMe__misionAndVision {
+	display: flex;
+	flex-direction: column;
+
+	// height: calc(100vh - 58px - 16px - 16px - 98px);
+	height: 100%;
+	margin-top: $margin;
+}
+.aboutMe__mision-container {
+	flex-grow: 1;
+
+	display: flex;
+	flex-direction: column;
+}
+.aboutMe__mision-container__title {
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	background-color: $white;
+	backdrop-filter: blur(5px);
+
+	color: $black;
+	text-align: center;
+
+	padding: $padding2 0;
+	width: 100%;
+}
+.aboutMe__mision-container__text {
+	flex-grow: 1;
+
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	background-color: $white;
+	backdrop-filter: blur(5px);
+
+	color: $black;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	text-align: justify;
+
+	margin: $margin auto;
+	padding: $padding;
+}
+.aboutMe__vision-container {
+	flex-grow: 1;
+
+	display: flex;
+	flex-direction: column;
+}
+.aboutMe__vision-container__title {
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	background-color: $white;
+	backdrop-filter: blur(5px);
+
+	color: $black;
+	text-align: center;
+
+	padding: $padding2 0;
+	width: 100%;
+}
+.aboutMe__vision-container__text {
+	flex-grow: 1;
+
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	background-color: $white;
+	backdrop-filter: blur(5px);
+
+	color: $black;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	text-align: justify;
+
+	margin-top: $margin;
+	padding: $padding;
+}
+.aboutMe__footer-container {
+	@extend .footer-container;
+}
+.aboutMe__button-navbar {
+	@extend .button-navbar;
+}
+.aboutMe__button-navbar__ico {
+	@extend .button-navbar__ico;
+}
+.aboutMe__button-navbar__ico--active {
+	@extend .button-navbar__ico--active;
+}
+
+@media screen and (min-width: $md) {
+	// .home__main-container {
+	// 	display: none;
+	// }
+	.aboutMe__body-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.aboutMe__misionAndVision {
+		padding-left: $padding;
+		margin: auto;
+	}
+}

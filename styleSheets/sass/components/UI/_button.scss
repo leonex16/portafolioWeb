@@ -1,0 +1,22 @@
+/*
+1. Posicionamiento
+2. Display y Box Model
+3. Tipografia
+3. Propiedades Visuales
+4. Misceláneas
+*/
+
+button {
+	margin: 1rem 0;
+	padding: 8px 4px;
+	width: 100%;
+
+	color: #ffffff; // Solo por este proyecto
+
+	background-color: opacify($color: $blueLight, $amount: 1); // Solo por este proyecto
+	border: none;
+	border-radius: 10px;
+	outline: none;
+
+	font-size: pxToRem(20);
+}

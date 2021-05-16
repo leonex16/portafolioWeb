@@ -1,0 +1,90 @@
+.projects__main-container {
+	@extend .main-container;
+}
+.projects__header-container {
+	@extend .header-container;
+}
+.projects__header-container__title {
+	@extend .header-container__title;
+}
+.projects__body-container {
+	@extend .body-container;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.projects__card-container {
+	flex-basis: 300px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	background-color: $white;
+	backdrop-filter: blur(5px);
+
+	margin: 0 $margin2 $margin $margin2;
+	max-width: 300px;
+	min-height: 410px;
+	padding: $padding;
+}
+.projects__card-header {
+	max-width: 220px;
+	min-height: 100px;
+}
+.projects__card-header__img {
+	min-height: 100px;
+	height: 100%;
+	width: 100%;
+
+	border-radius: 20px;
+
+	object-fit: cover;
+}
+.projects__card-body {
+	display: flex;
+	flex-direction: column;
+
+	height: calc(410px - 16px - 100px - 16px);
+}
+.projects__card-body__title {
+	color: $black;
+	text-align: center;
+
+	margin: $margin auto;
+}
+.projects__card-body__summary {
+	flex-grow: 1;
+
+	color: $black;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: justify;
+}
+.projects__card-body__link {
+	display: inline-block;
+
+	color: $blueLight;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none;
+
+	margin-top: $margin;
+	width: 100%;
+}
+.projects__footer-container {
+	@extend .footer-container;
+}
+.projects__button-navbar {
+	@extend .button-navbar;
+}
+.projects__button-navbar__ico {
+	@extend .button-navbar__ico;
+}
+.projects__button-navbar__ico--active {
+	@extend .button-navbar__ico--active;
+}
